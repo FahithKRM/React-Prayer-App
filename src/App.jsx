@@ -5,7 +5,7 @@ import image from './assets/image.png'
 
 const App = () => {
   const [time, setTime] = useState([]);
-  const [date, setDate] = useState("10-08-2024");
+  const [date, setDate] = useState("2024-08-11");
   const [city, setCity] = useState("Colombo");
   const [country, setCountry] = useState("SriLanka");
 
