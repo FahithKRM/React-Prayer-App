@@ -59,10 +59,10 @@ const App = () => {
         {Object.keys(time).map((item, index) => {
           return (
             <li key={index}>
-              <p className="time">
-                <span>{item}</span>
-                <b>{time[item]}</b>
-              </p>
+              <div className="time">
+                <p><span>{item}</span></p>
+                <p><b>{time[item]}</b></p>
+              </div>
               <hr />
             </li>
           );
