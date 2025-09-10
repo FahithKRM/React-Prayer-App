@@ -30,7 +30,7 @@ img{
 form-section{
   display: felx;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
 }
 form{
   display: flex;
