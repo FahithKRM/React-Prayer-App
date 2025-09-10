@@ -30,12 +30,8 @@ img{
 form-section{
   display: felx;
   align-items: center;
-  justify-content: space-between;
-}
-/* form{
-  display: flex;
   gap: 10px;
-} */
+}
 form input{
   border: none;
   padding: 10px;
