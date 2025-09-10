@@ -32,6 +32,10 @@ form-section{
   align-items: center;
   gap: 10px;
 }
+form{
+  display: flex;
+  gap: 10px;
+}
 form input{
   border: none;
   padding: 10px;
