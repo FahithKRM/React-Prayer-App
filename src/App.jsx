@@ -4,8 +4,9 @@ import "./App.css";
 import image from './assets/image.png'
 
 const App = () => {
+  const date = new Date();
   const [time, setTime] = useState([]);
-  const [date, setDate] = useState("2024-08-11");
+  const [date, setDate] = useState(date);
   const [city, setCity] = useState("Colombo");
   const [country, setCountry] = useState("SriLanka");
 
