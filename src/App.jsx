@@ -24,37 +24,38 @@ const App = () => {
   }, [time]);
 
   return (
-    <div>
-      
+    <>
       <h1><img src={image} alt="" /> Prayer Time App</h1>
-      <form onSubmit={HandleTime}>
-        <input
-          value={city}
-          onChange={(e) => {
+      <div className="form-section">
+        <form onSubmit={HandleTime}>
+          <input
+            value={city}
+            onChange={(e) => {
             setCity(e.target.value);
-          }}
-          type="text"
-          className="city"
-          placeholder="Enter the city"
-        />
-        <input
-          value={country}
-          onChange={(e) => {
+            }}
+            type="text"
+            className="city"
+            placeholder="Enter the city"
+          />
+          <input
+            value={country}
+            onChange={(e) => {
             setCountry(e.target.value);
-          }}
-          type="text"
-          className="country"
-          placeholder="Enter the country"
-        />
-        <input
-          value={date}
-          onChange={(e) => {
+            }}
+            type="text"
+            className="country"
+            placeholder="Enter the country"
+          />
+          <input
+            value={date}
+            onChange={(e) => {
             setDate(e.target.value);
-          }}
-          type="date"
-          className="date"
-        />
-      </form>
+            }}
+            type="date"
+            className="date"
+          />  
+        </form>
+      </div>
 
       <div className="time-lists">
         {Object.keys(time).map((item, index) => {
@@ -69,7 +70,7 @@ const App = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 
